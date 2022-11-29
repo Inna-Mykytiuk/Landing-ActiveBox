@@ -1,0 +1,433 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: 'Raleway', sans-serif;
+   font-size: 14 px;
+   color: #6C7279;
+
+   background-color: #FFFFFF;
+}
+
+
+/* font-family: 'Cardo', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+address {
+   font-style: normal;
+}
+
+img {
+   display: block;
+   /* max-width: 100%;
+   height: auto;    */
+   /* width: 100%; */
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+   margin: 0 auto;
+}
+
+ul,
+ol {
+   list-style: none;
+   padding-left: 0;
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+   /* color: currentColor; */
+}
+
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}
+
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+
+}
+
+/* Header */
+
+.header {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+
+.header__inner {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 0;
+   border-bottom: 1px solid #515369;
+   align-items: center;
+}
+
+
+/* Navigation */
+
+.nav {
+   display: flex;
+   gap: 40px;
+
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 1.15;
+   text-transform: uppercase;
+   
+}
+
+
+.nav-link {
+   padding: 20px 0;
+   color: #FFFFFF;
+   opacity: .75;
+
+   transition: opacity .2s linear;
+
+}
+
+.nav-link:hover {
+   opacity: 1;
+}
+
+
+/* Intro */
+
+.intro {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   height: 750px;
+   /* position: fixed; */
+   width: 100%;
+   background-image: url(./img/intro-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-color: #515369;
+   text-align: center;
+   
+}
+
+.intro__inner {
+   max-width: 970px;
+   margin: 0 auto;
+}
+
+.intro__title {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 65px;
+   font-weight: 700;
+   line-height: 1.1;
+   text-transform: uppercase;
+
+
+   color: #FFFFFF;
+   margin-bottom: 30px;
+}
+
+.intro__subtitle {
+   font-family: 'Raleway', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 1.5;
+
+   color: #FFFFFF;
+   margin-bottom: 75px;
+}
+
+.btn {
+   display: inline-block;
+   vertical-align: top;
+   padding: 14px 40px;
+
+   border-radius: 2px;
+   border: 0;
+   cursor: pointer;
+
+   font-family: 'Raleway', sans-serif;
+   font-size: 13px;
+   font-weight: 600;
+   text-transform: uppercase;
+   transition: background .1s linear;
+   color: #FFFFFF;
+}
+
+.btn--red {
+   background-color: #e84545;
+}
+
+.btn--red:hover {
+   background-color: #dd3434;
+}
+
+/* Features */
+
+.features {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 95px 0;
+}
+
+.futures__item {
+   width: 33.33333%;
+   
+   /* row-gap: 20px; */
+   padding: 0 40px;
+   text-align: center;
+   margin: 25px 0;
+}
+
+.futures__icon {
+   /* display: block; */
+   margin: 0 auto;
+   margin-bottom: 20px;
+}
+
+.futures__title {
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #2d3033;
+
+   margin-bottom: 20px;
+   
+}
+
+.futures__text {
+   font-size: 14px;
+   font-weight: 1.5;
+
+   color: #6C7279;
+}
+
+/* Works */
+
+.works {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.works__item {
+   position: relative;
+   width: 25%;
+   height: 350px;   
+   overflow: hidden;
+}
+
+.works__photo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 1;
+
+   transform: translate3d(-50%, -50%, 0);
+
+}
+
+.works__content {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 2;
+
+   background-color: rgba(232, 69, 69, 0.9);
+   opacity: 0;
+   transition: opacity .2s linear;
+}
+
+.works__item:hover .works__content {
+   opacity: 1;
+}
+
+.works__title {
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #FFFFFF;
+
+   margin-bottom: 5px;
+}
+
+.works__text {
+   font-size: 14px;
+   color: #FFFFFF;
+}
+
+/* Team */
+
+.team {
+   margin: 100px 0;
+}
+
+.team__inner {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   
+}
+
+.team__item {
+   width: 25%;
+   margin-bottom: 30px;
+   width: calc((100% - 90px) / 4);
+}
+
+.team__img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+.team__name {
+   font-size: 22px;
+   color: #2d3030;
+   
+
+   margin-bottom: 8px;
+   margin-top: 20px;
+}
+
+.team__prof {
+   font-size: 13px;
+   color: #e84545;
+   text-transform: uppercase;
+
+   margin-bottom: 15px;
+}
+
+.team__text {
+   font-size: 14px;
+   color: #6c7279;
+   line-height: 1.5;
+   margin-bottom: 20px;
+}
+
+/* Social */
+
+.social {
+   display: flex;
+   /* width: 100%; */
+   gap: 5px;
+}
+
+.social__item  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   border: 1px solid #d7d9db;
+   border-radius: 5px;
+   background-color: #FFFFFF;
+
+   transition: color 0.1s linear, border-color 0.1s linear;
+}
+
+.social__item:hover {
+   border-color: #e84545;
+}
+
+.soc__icon {
+   display: block;
+   height: 18px;
+   fill:#555555; 
+
+}
+
+.social__item:hover .soc__icon {
+   fill: #e84545;
+}
+
+/* Reviews */
+
+.reviews {
+   background-color: #53354a;
+   overflow: hidden;
+
+}
+
+.reviews__item {
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
+.reviews__photo {
+   position: relative;
+   width: 50%;
+   height: 500px;
+}
+
+.reviews__img {
+   position: absolute;
+   top: 50%;
+   right: 0;
+   z-index: 1;
+
+   transform: translateY(-50%);
+}
+
+.reviews__content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   width: 50%;
+   padding-left: 80px;
+}
+
+.reviews__text {
+   font-family: 'Cardo', serif;
+   font-size: 36px;
+   font-style: italic;
+   color: #FFFFFF;
+   line-height: 1.2;
+   margin-bottom: 30px;
+
+}
+
+.reviews__auth {
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 1.6;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-left: 0;
+}
