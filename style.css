@@ -7,7 +7,7 @@
 body {
    margin: 0;
    font-family: 'Raleway', sans-serif;
-   font-size: 14 px;
+   font-size: 14px;
    color: #6C7279;
 
    background-color: #FFFFFF;
@@ -148,7 +148,6 @@ a {
    line-height: 1.1;
    text-transform: uppercase;
 
-
    color: #FFFFFF;
    margin-bottom: 30px;
 }
@@ -168,6 +167,7 @@ a {
    display: inline-block;
    vertical-align: top;
    padding: 14px 40px;
+   text-align: center;
 
    border-radius: 2px;
    border: 0;
@@ -187,6 +187,10 @@ a {
 
 .btn--red:hover {
    background-color: #dd3434;
+}
+
+.btn--long {
+   min-width: 280px;
 }
 
 /* Features */
@@ -243,6 +247,8 @@ a {
    overflow: hidden;
 }
 
+
+
 .works__photo {
    position: absolute;
    top: 50%;
@@ -250,8 +256,7 @@ a {
    z-index: 1;
 
    transform: translate3d(-50%, -50%, 0);
-
-}
+} 
 
 .works__content {
    position: absolute;
@@ -346,6 +351,10 @@ a {
    gap: 5px;
 }
 
+.social--footer {
+   justify-content: center;
+}
+
 .social__item  {
    display: flex;
    justify-content: center;
@@ -363,15 +372,23 @@ a {
    border-color: #e84545;
 }
 
+.social--footer .social__item {
+   background: none;
+   border-width: 2px;
+}
+
 .soc__icon {
    display: block;
    height: 18px;
    fill:#555555; 
-
 }
 
 .social__item:hover .soc__icon {
    fill: #e84545;
+}
+
+.social--footer .soc__icon {
+   fill: #FFFFFF;
 }
 
 /* Reviews */
@@ -379,7 +396,6 @@ a {
 .reviews {
    background-color: #53354a;
    overflow: hidden;
-
 }
 
 .reviews__item {
@@ -419,15 +435,176 @@ a {
    color: #FFFFFF;
    line-height: 1.2;
    margin-bottom: 30px;
-
 }
 
 .reviews__auth {
-font-style: normal;
-font-weight: 700;
-font-size: 13px;
-line-height: 1.6;
-text-transform: uppercase;
-color: #FFFFFF;
-margin-left: 0;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 1.6;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-left: 0;
+}
+
+/* Download */
+
+.download {
+   margin: 90px 0; 
+   text-align: center;
+}
+
+.download__title {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+   font-size: 28px;
+   color: #2d3033;
+   margin-bottom: 10px;
+
+}
+
+.download__text {
+   font-weight: 700;
+   font-size: 13px;
+   text-transform: uppercase;
+   color: #2d3033;
+   margin-bottom: 30px;
+}
+
+
+/* Footer */
+
+.footer {
+   /* margin: 90px 0; */
+   background-color: #3a3e64;
+   
+}
+
+.footer__inner {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 70px 0;
+}
+
+.footer__block {
+   width: 33.33333%;
+   text-align: center;
+   padding: 15px 15px;
+}
+
+.footer__title {
+   font-weight: 700;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-bottom: 10px;
+}
+
+.footer__address {
+   font-size: 14px;
+   line-height: 1.5;
+   color: rgba(255,255,255, .5);
+}
+
+.footer__text {
+   font-size: 14px;
+   line-height: 1.5;
+   color: rgba(255,255,255, .5);
+}
+
+/* Copyright */
+
+.copyright {
+   padding: 20px 0;
+   background-color: #313454;
+}
+
+.copyright__text {
+   text-align: center;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #808080;
+}
+
+.copyright__text span {
+   color: #FFFFFF;
+}
+
+.burger {
+   display: none;
+   background: none;
+   border: 0;
+   cursor: pointer;
+   padding: 20px 10px;
+}
+
+.burger__item {
+   display: block;
+   width: 30px;
+   height: 3px;
+   background-color: #FFFFFF;
+
+   font-size: 0;
+   color: transparent;
+   position: relative;
+   
+
+}
+
+.burger__item::before,
+.burger__item::after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: #FFFFFF;
+
+   position: absolute;
+   left: 0;
+   z-index: 1;
+}
+
+.burger__item::before {
+   top: -8px;
+}
+
+.burger__item::after {
+   bottom: -8px;
+}
+
+/* MEDIA */
+
+@media (max-width: 991px) {
+   .nav {
+      display: none;
+   }
+
+   .burger {
+      display: block;
+   }
+
+   .intro__title {
+      font-size: 40px;
+   }
+}
+
+@media (max-width: 1200px) {
+   
+}
+
+
+@media (max-width: 767px) {
+   .intro {
+      height: auto;
+      padding-top: 130px;
+      padding-bottom: 30px;
+   }
+
+   .intro__title {
+      font-size: 30px;
+   }
+
+   .intro__subtitle {
+      font-size: 16px;
+      margin-bottom: 30px;
+   }
 }

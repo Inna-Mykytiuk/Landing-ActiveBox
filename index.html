@@ -8,9 +8,9 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;700&family=Raleway:wght@300,400;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
-   <title>Active box</title>
+   <title>ActiveBox</title>
 </head>
 <body>
 <!-- Header -->
@@ -28,11 +28,17 @@
                <a href="#" class="nav-link">reviews</a>
                <a href="#" class="nav-link">Download</a>
             </nav>
+            <button class="burger" type="button">
+               <span class="burger__item">Menu</span>
+            </button>
          </div>
       </div>
    </header>
+   
+   
    <main>
-      <!-- Intro -->
+      
+<!-- Intro -->
    <div class="intro">
       <div class="container">
          <div class="intro__inner">
@@ -273,9 +279,78 @@
                </div>
             </div>
          </div>
-      </div>   
+      </div>  
 
+<!-- Download  -->
+      <div class="download">
+         <div class="container">
+            <h3 class="download__title">Are You Ready To Start? Download Now For Free</h3>
+            <div class="download__text">
+               <p>Fusce dapibus, tellus ac cursus commodo</p> 
+            </div>
+            <a href="#" class="btn btn--red btn--long">Download Here</a>
+         </div>
+      </div>
    </main>
+
+<!-- Footer -->
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+            <div class="footer__block">
+               <h4 class="footer__title">Location</h4>
+               <address class="footer__address">
+                  <p class="footer__text">3481 Melrose Place</p>
+                  <p class="footer__text">Beverly Hills, CA 90210</p>
+               </address> 
+            </div>
+            <div class="footer__block">
+               <h4 class="footer__title">Share With Love</h4>
+               <div class="social social--footer">
+                  <a href="#" class="social__item">
+                     <svg class="soc__icon" width="20" height="20">
+                        <use href="./img/social-defs.svg#icon-insta"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="social__item">
+                     <svg class="soc__icon" width="20" height="20">
+                        <use href="./img/social-defs.svg#icon-twit"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="social__item">
+                     <svg class="soc__icon" width="20" height="20">
+                        <use href="./img/social-defs.svg#icon-face"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="social__item">
+                     <svg class="soc__icon" width="20" height="20">
+                        <use href="./img/social-defs.svg#icon-lkdl"></use>
+                     </svg>
+                  </a>
+               </div> 
+            </div>
+            <div class="footer__block">
+               <h4 class="footer__title">About ActiveBox</h4>
+               <div class="footer__text">
+                  <p>3481 Melrose Place</p>
+                  <p>Beverly Hills, CA 90210</p>
+               </div> 
+            </div>
+         </div>
+      </div>
+
+<!-- Copyright -->
+      <div class="copyright">
+         <div class="container">
+            <div class="copyright__text">
+            <p>Copyright 2015 ActiveBox. All Rights Reserved</p>
+            <p>Made with love <span>by Camal Chaneman</span> </p>    
+            </div>
+         </div>
+
+      </div>
+
+   </footer>
 
 </body>
 </html>
